@@ -56,10 +56,10 @@ void unblock()
 // DLL entry point
 BOOL WINAPI DllMain(HINSTANCE h, DWORD reason, LPVOID reserved)
 {
-    printf("NOTA: O PROGRAMA DEVE SER EXECUTADO COM PRIVILEGIOS DE ADMINISTRADOR.\n");
     int choice;
     if (reason == DLL_PROCESS_ATTACH)
     {
+        printf("NOTA: O PROGRAMA DEVE SER EXECUTADO COM PRIVILEGIOS DE ADMINISTRADOR.\n");
         printf(">COM-BLOCKER: Process Attached.\n");
         printf("> Digite 0 para BLOQUEAR todas portas USB: \n");
         printf("> Digite 1 para DESBLOQUEAR todas portas USB: \n");
