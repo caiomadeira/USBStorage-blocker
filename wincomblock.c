@@ -9,7 +9,7 @@
 
 void block()
 {
-    printf("COM-BLOCKER: Process Attached.\n");
+    printf(">COM-BLOCKER: Process Attached.\n");
     #ifdef _WIN64 // Only 64x
         printf("Win x64-bit"); puts("");
     #else // 86x
@@ -29,6 +29,6 @@ BOOL WINAPI DllMain(HINSTANCE h, DWORD reason, LPVOID reserved)
     } 
     else if (reason == DLL_PROCESS_DETACH) {
         Sleep(1000);
-        printf("COM-BLOCKER: Process Detached.\n");
+        printf(">COM-BLOCKER: Process Detached.\n");
     }
 }
