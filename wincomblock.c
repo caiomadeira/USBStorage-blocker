@@ -24,7 +24,8 @@ void block();
 void unblock();
 
 void block()
-{   // reg add HKLM\System\CurrentControlSet\Services\cdrom /t REG_DWORD /v "Start" /d 4 /f 
+{   
+    // reg add HKLM\System\CurrentControlSet\Services\cdrom /t REG_DWORD /v "Start" /d 4 /f 
     char block_cmd[] = "reg add HKLM\\System\\CurrentControlSet\\Services\\cdrom /t REG_DWORD /v '\"'Start'\"' /d 3 /f";
 
     printf("block: %s", block_cmd);
