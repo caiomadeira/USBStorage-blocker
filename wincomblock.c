@@ -26,7 +26,7 @@ void unblock();
 void block()
 {   
     // reg add HKLM\System\CurrentControlSet\Services\cdrom /t REG_DWORD /v "Start" /d 4 /f 
-    char block_cmd[] = "reg add HKLM\\System\\CurrentControlSet\\Services\\cdrom /t REG_DWORD /v '\"'Start'\"' /d 3 /f";
+    char block_cmd[] = "reg add HKLM\\System\\CurrentControlSet\\Services\\USBSTOR /t REG_DWORD /v '\"'Start'\"' /d 3 /f";
 
     printf("block: %s", block_cmd);
 
@@ -41,7 +41,7 @@ void block()
 
 void unblock()
 {
-    char block_cmd[] = "reg add HKLM\\System\\CurrentControlSet\\Services\\cdrom /t REG_DWORD /v '\"'Start'\"' /d 1 /f";
+    char block_cmd[] = "reg add HKLM\\System\\CurrentControlSet\\Services\\USBSTOR /t REG_DWORD /v '\"'Start'\"' /d 1 /f";
 
     printf("unblock: %s", block_cmd);
 
