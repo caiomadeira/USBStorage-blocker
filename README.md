@@ -1,4 +1,4 @@
-# COM-Blocker
+# USBStorage-Blocker
 ### A simple way to block COM USB (Communication Port)  
 
 ---
@@ -9,4 +9,4 @@
 ![alt text](src/1.png?raw=true)
 
 ---
-Tested in windows 10 and 11 x64/X32-bit
+Tested in windows 10 and 11 x64/x32-bit
