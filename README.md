@@ -2,7 +2,7 @@
 ### A simple way to block COM USB (Communication Port)  
 
 ---
-## USAGE:
+## Usage/Uso:
 - You need to run the program with admin privileges.  
 - Você precisa rodar o programa com privilégios de administrador.
 
