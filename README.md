@@ -9,4 +9,5 @@
 ![alt text](src/1.png?raw=true)
 
 ---
-Tested in windows 10 and 11 x64/x32-bit
+Tested in windows 10 x64/x32-bit.
+Some problems in Windows 11 (Could be or not work).
